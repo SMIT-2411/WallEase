@@ -1,0 +1,24 @@
+{
+  "originHash" : "43d07963a8da6a58188e2e18f53f5b69269920b7bceb6b56620e13a8df4ab71a",
+  "pins" : [
+    {
+      "identity" : "focusentity",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maxxfrazer/FocusEntity",
+      "state" : {
+        "revision" : "5fa521172e447cbfa8c2fc1d6602d9d6bed202c7",
+        "version" : "2.5.1"
+      }
+    },
+    {
+      "identity" : "usdzscanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alfianlosari/USDZScanner.git",
+      "state" : {
+        "revision" : "d5da079adcf29e22acabc0f713bb9264e44c8938",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 3
+}

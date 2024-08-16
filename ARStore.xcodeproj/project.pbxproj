@@ -3,8 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		3A441AF22C6B8BA7003ECE1F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 3A441AF12C6B8BA7003ECE1F /* FocusEntity */; };
+		3ADC97F92C6E793C00CBD0FC /* USDZScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADC97F82C6E793C00CBD0FC /* USDZScanner */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A69DFD52C64E37000DE27C5 /* ARStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +24,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A441AF22C6B8BA7003ECE1F /* FocusEntity in Frameworks */,
+				3ADC97F92C6E793C00CBD0FC /* USDZScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +68,8 @@
 			);
 			name = ARStore;
 			packageProductDependencies = (
+				3A441AF12C6B8BA7003ECE1F /* FocusEntity */,
+				3ADC97F82C6E793C00CBD0FC /* USDZScanner */,
 			);
 			productName = ARStore;
 			productReference = 3A69DFD52C64E37000DE27C5 /* ARStore.app */;
@@ -90,6 +99,10 @@
 				Base,
 			);
 			mainGroup = 3A69DFCC2C64E37000DE27C5;
+			packageReferences = (
+				3A441AF02C6B8BA7003ECE1F /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				3ADC97F72C6E793C00CBD0FC /* XCRemoteSwiftPackageReference "USDZScanner" */,
+			);
 			productRefGroup = 3A69DFD62C64E37000DE27C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,11 +263,14 @@
 				DEVELOPMENT_TEAM = 2LRPRL7G34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Access Needed , To experience Augmented Reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -279,11 +295,14 @@
 				DEVELOPMENT_TEAM = 2LRPRL7G34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Access Needed , To experience Augmented Reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +338,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A441AF02C6B8BA7003ECE1F /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		3ADC97F72C6E793C00CBD0FC /* XCRemoteSwiftPackageReference "USDZScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/USDZScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A441AF12C6B8BA7003ECE1F /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A441AF02C6B8BA7003ECE1F /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+		3ADC97F82C6E793C00CBD0FC /* USDZScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ADC97F72C6E793C00CBD0FC /* XCRemoteSwiftPackageReference "USDZScanner" */;
+			productName = USDZScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A69DFCD2C64E37000DE27C5 /* Project object */;
 }

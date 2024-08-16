@@ -1,0 +1,38 @@
+{
+  "advancedEditorSelectedIdentifier" : "ProjectBrowser",
+  "openSceneRelativePaths" : [
+    "Scene.usda"
+  ],
+  "recentIdentifiers" : {
+
+  },
+  "sceneCameraHistory" : {
+    "911989DC-0E42-46D9-B0BF-A534F32C609D" : [
+      {
+        "date" : 745242876.569075,
+        "title" : "Untitled",
+        "transform" : [
+          0.99993384,
+          0,
+          0.011504872,
+          0,
+          0.008135173,
+          0.7071069,
+          -0.70706,
+          0,
+          -0.008135174,
+          0.70710677,
+          0.7070601,
+          0,
+          -0.83467793,
+          2.2436285,
+          6.74606,
+          1
+        ]
+      }
+    ]
+  },
+  "sceneViewportBackgroundColors" : {
+
+  }
+}
